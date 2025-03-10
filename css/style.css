@@ -204,7 +204,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -871,6 +871,11 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0;
   padding: 0;
 }
+@media screen and (max-width: 768px) {
+  .fh5co-social-icons {
+    margin-bottom: 100px;
+  }
+}
 .fh5co-social-icons li {
   margin: 0;
   padding: 0;
@@ -878,13 +883,13 @@ h1, h2, h3, h4, h5, h6, figure {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 .fh5co-social-icons li a {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   color: #113468;
   padding-left: 10px;
   padding-right: 10px;
@@ -1204,6 +1209,7 @@ form label {
 .couple-half {
   width: 50%;
   float: left;
+  padding-block: 24px;
 }
 @media screen and (max-width: 768px) {
   .couple-half {
@@ -1252,14 +1258,29 @@ form label {
   margin-left: 5px;
 }
 .couple-half .desc-groom {
-  padding-right: 180px;
+  padding-right: 80px;
   text-align: right;
 }
 .couple-half .desc-bride {
-  padding-left: 180px;
+  padding-left: 80px;
   text-align: left;
 }
 @media screen and (max-width: 480px) {
+  .couple-half .groom, .couple-half .bride {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .couple-half .desc-groom {
+    padding-right: 0;
+    text-align: center;
+  }
+  .couple-half .desc-bride {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .couple-half .groom, .couple-half .bride {
     margin-left: 0;
     margin-right: 0;
@@ -1370,7 +1391,7 @@ form label {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   width: 100px;
   height: 100px;
 }
