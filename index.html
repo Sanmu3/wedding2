@@ -4,20 +4,20 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Zulfa & Ismail</title>
+	<title>Rendi & Euis</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Zulfa & Ismail" />
+	<meta name="description" content="Rendi & Euis" />
 	<meta name="keywords" content="wedding, wedding invitation, invitation, the wedding" />
 	<meta name="author" content="Sanmu" />
 
 	<!-- Facebook and Twitter integration -->
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="Zulfa & Ismail">
+	<meta property="og:title" content="Rendi & Euis">
 	<meta property="og:type" content="website">
-	<meta property="og:url" content="https://zulfaismail.netlify.app/">
-	<meta property="og:description" content="You're invited to celebrate the wedding of Zulfa & Ismail. Join us in witnessing a beautiful journey of love and togetherness">
+	<meta property="og:url" content="https://RendiEuis.netlify.app/">
+	<meta property="og:description" content="You're invited to celebrate the wedding of Rendi & Euis. Join us in witnessing a beautiful journey of love and togetherness">
 	<meta property="og:image" content="https://outerbloom.com/cdn/shop/articles/00eab7ed2549ae3854581ddf20b2c4cb_1024x1024.jpg?v=1493972046">
-	<meta property="og:site_name" content="Zulfa & Ismail" />
+	<meta property="og:site_name" content="Rendi & Euis" />
 	<link rel="icon" href="images/favicon.jpg">
 
 	<!--
@@ -80,9 +80,9 @@
 		<!--Floating button-->
 		<div id="floating-button" class="float">
 			<div class="control-center open">
-				<div class="audio-play">
-					<div data-video="8bWRU2ipOwA" data-autoplay="1" data-loop="1" id="youtube-audio1"></div>
-				</div>
+				<!-- <div class="audio-play">
+					<div data-video="8bWRU2ipOwA" data-autoplay="0" data-loop="1" id="youtube-audio1"></div>
+				</div> -->
 				<ul class="right-sidebar">
 					<!--gallery-->
 					<li onclick="scrollToElement('fh5co-ayat')" style="background-image: url('./images/quran.png')">
@@ -108,26 +108,38 @@
 		</div>
 
 		<div id="overlay">
-			<div class="content">
-				<div class="container">
-					<!-- <div class="row">
-						<div
-							class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box fadeInUp animated-fast">
-							<img src="images/CoupleFront.png" alt="" class="couple-main">
-						</div>
-					</div> -->
-					<div class="row"  style="margin-top: 15%;">
-						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-							<h1>Zulfa & Ismail</h1>
-							<p style="margin-bottom: 0">Kepada Bapak/Ibu/Saudara/i <br/><b class="nama-undangan"></b></p>
-							<p>Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami.</p>
+    <div class="envelope-wrapper">
+        <div class="envelope">
+            <div class="flap"></div>
+            
+            <div class="envelope-back"></div>
+            
+           <!-- Kertas Surat -->
+<div class="letter">
+    <div class="letter-content">
+        <p class="attn-text">Kepada Bapak/Ibu/Saudara/i</p>
+        <!-- Nama tamu otomatis muncul di sini secara dinamis -->
+        <h4 class="guest-name nama-undangan">- Nama Tamu -</h4>
+        
+        <div class="wedding-mini-title">
+            <span>The Wedding of</span>
+            <h3>Rendi & Euis</h3>
+        </div>
+        
+        <button id="open-invitation" class="btn btn-primary">
+           Buka Undangan
+        </button>
+    </div>
+</div>
+            
+            <div class="envelope-front"></div>
+        </div>
+    </div>
+    <div class="scroll-hint">
+        <i class="icon-arrow-down"></i> <br> Scroll ke bawah untuk membuka surat
+    </div>
+</div>
 
-							<button class="btn btn-primary" id="open-invitation">Buka Undangan</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 
 		<div id="fh5co-header">
 			<div class="container">
@@ -147,14 +159,25 @@
 				</div> -->
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-						<h1>Zulfa & Ismail</h1>
+						<h1>Rendi & Euis</h1>
 						<p style="color: #bf9b73">Kami berharap Anda menjadi bagian dari hari istimewa kami!</p>
 						<div class="simply-countdown simply-countdown-wedding"></div>
+						<div class="wedding-date-detail" style="margin-top: 15px; margin-bottom: 20px;">
+    <h3 style="font-family: 'Merriweather', Arial, serif; font-size: 20px; color: #113468; font-weight: bold; margin-bottom: 5px;">
+        Minggu, 05 Juli 2026
+    </h3>
+    <p style="font-family: 'Didact Gothic', Arial, sans-serif; font-size: 14px; color: #bf9b73; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0;">
+        Pukul 13:00 WIB s.d. 15:00 WIB
+    </p>
+</div>
 						<br>
 						<p>
-							
-							<a onclick="window.open('https://www.google.com/calendar/render?action=TEMPLATE&text=Wedding&dates=20250311T100000/20250311T170000&details=Join+us+for+our+special+day!&location=https://maps.app.goo.gl/Yu7Dnp8XBkQEyMRr6', '_blank')" target="_blank"
-								class="btn btn-primary btn-sm">Save the date</a><br>
+						<a onclick="window.open('https://calendar.google.com/calendar/render?action=TEMPLATE&text=The+Wedding+of+Rendi+%26+Euis+Farida&dates=20260705T060000Z/20260705T080000Z&details=Tanpa+mengurangi+rasa+hormat%2C+kami+mengundang+Anda+untuk+menghadiri+acara+pernikahan+kami.+Info+lengkap+pada+undangan.+Terima+kasih.&location=RT.10%2FRW.3%2C+Kp.+Babakan+Banten%2C+Desa+Kutajaya%2C+Kutawaluya%2C+Kab.+Karawang%2C+Jawa+Barat+41358&sf=true&output=xml', '_blank')" 
+       target="_blank"
+       class="btn btn-primary btn-sm">
+       Save the date
+    </a>
+    <br>
 							<i style="font-size: 15px">*Klik tombol ini untuk menyimpan tanggal pada google kalender</i>
 						</p>
 					</div>
@@ -182,12 +205,12 @@
 							<img src="images/TahtaRamadhani.jpg" alt="groom" class="img-responsive">
 						</div> -->
 						<div class="desc-groom">
-							<h3>Zulfa Taqiyyah ali</h3>
-							<p><span style="color: #bf9b73">Putri Ketiga dari</span><br>
-								<span class="parents-font">Bapak Ali muslim</span>
+							<h3>Rendi</h3>
+							<!-- <p><span style="color: #bf9b73">Putra Ketiga dari</span><br>
+								<span class="parents-font">Bapak</span>
 								<br>
-								<span class="parents-font">Ibu Yuliawati</span>
-							</p>
+								<span class="parents-font">Ibu</span>
+							</p> -->
 							<!-- <div id="social-media-rehan">
 								<ul class="fh5co-social-icons">
 									<li><a target="_blank" href="https://instagram.com/tahtaramadhani"><i
@@ -204,12 +227,12 @@
 							<img src="images/HairulLana.jpg" alt="groom" class="img-responsive">
 						</div> -->
 						<div class="desc-bride">
-							<h3>Rachmad Ismail</h3>
-							<p><span style="color: #bf9b73">Putra Keempat dari</span><br>
-								<span class="parents-font">Bapak Purwanto Rahardjo</span>
+							<h3>Euis Farida</h3>
+							<!-- <p><span style="color: #bf9b73">Putri Keempat dari</span><br>
+								<span class="parents-font">Bapak</span>
 								<br>
-								<span class="parents-font">Ibu Endarsih</span>
-							</p>
+								<span class="parents-font">Ibu</span>
+							</p> -->
 							<!-- <div id="social-media-molid">
 								<ul class="fh5co-social-icons">
 									<li><a target="_blank" href="https://instagram.com/hairullana_"><i
@@ -224,40 +247,41 @@
 			</div>
 		</div>
 
-		<div id="fh5co-event" class="fh5co-bg" style="border-top: 1px solid #f2f2f2; z-index: 1999;">
+		<div id="fh5co-event" class="fh5co-bg" style="border-top: 1px solid #f2f2f2; z-index: 99;">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
-						<h2>Save The Date <a onclick="window.open('https://www.google.com/calendar/render?action=TEMPLATE&text=Wedding&dates=20250311T100000/20250311T170000&details=Join+us+for+our+special+day!&location=https://maps.app.goo.gl/Yu7Dnp8XBkQEyMRr6', '_blank')"
+						
+						<h2>Save The Date <a onclick="window.open('https://calendar.google.com/calendar/render?action=TEMPLATE&text=The+Wedding+of+Rendi+%26+Euis+Farida&dates=20260705T060000Z/20260705T080000Z&details=Tanpa+mengurangi+rasa+hormat%2C+kami+mengundang+Anda+untuk+menghadiri+acara+pernikahan+kami.+Info+lengkap+pada+undangan.+Terima+kasih.&location=RT.10%2FRW.3%2C+Kp.+Babakan+Banten%2C+Desa+Kutajaya%2C+Kutawaluya%2C+Kab.+Karawang%2C+Jawa+Barat+41358&sf=true&output=xml', '_blank')" 
 								class="btn btn-info"><i class="icon-download2"></i></a></h2>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1">
-						<div class="col-md-6 col-sm-6 text-center">
+						<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 text-center">
 							<div class="event-wrap animate-box">
 								<h3 style="font-family: 'Oswald', Arial, serif;">Akad Nikah</h3>
 								<div class="event-col">
 									<i class="icon-clock"></i>
-									<span>09:00</span>
-									<span>10:00</span>
+									<span>13:00 -</span>
+									<span>15:00</span>
 								</div>
 								<div class="event-col">
 									<i class="icon-calendar"></i>
-									<span>Ahad</span>
-									<span class="tanggal">11 Mei 2025</span>
+									<span>Minggu</span>
+									<span class="tanggal">7 July 2026</span>
 								</div>
-								<p style="font-family: 'Courgette', Arial, serif">Alamat : Aula kantor desa Rengasdengklok Selatan Jl. Perintis Kemerdekaan, R.Dengklok Sel., Kec. R.Dengklok, Karawang, Jawa Barat 41352</p>
+								<p style="font-family: 'Courgette', Arial, serif">Alamat : masjid sekitar RT.10/RW.3,kp.babakab.banten, desa.kutajaya, kutawaluya, kab.karawang, Jawa Barat. Id 41358</p>
 
 
-								<a href="https://maps.app.goo.gl/NitJbserui4z6z7j8" target="_blank"
+								<a href="https://maps.app.goo.gl/sDyhgUum9YSsBEjr6" target="_blank"
 									class="btn btn-primary">Penunjuk Lokasi <i class="icon-map2"></i></a>
 									<br>
 								<!-- <a href="https://instagram.com/hairullana_" target="_blank"
 									class="btn btn-danger">Live Instagram <i class="icon-instagram"></i></a> -->
 							</div>
 						</div>
-						<div class="col-md-6 col-sm-6 text-center">
+						<!-- <div class="col-md-6 col-sm-6 text-center">
 							<div class="event-wrap animate-box">
 								<h3 style="font-family: 'Oswald', Arial, serif;">Resepsi Nikah</h3>
 								<div class="event-col">
@@ -275,15 +299,15 @@
 								<a href="https://maps.app.goo.gl/NitJbserui4z6z7j8" target="_blank"
 									class="btn btn-primary">Penunjuk Lokasi <i class="icon-map2"></i></a>
 									<br>
-								<!-- <a class="btn btn-outline"><s>Live Instagram <i class="icon-instagram"></i></s></a> -->
+							<a class="btn btn-outline"><s>Live Instagram <i class="icon-instagram"></i></s></a>
 							</div>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div id="fh5co-protocol">
+		<!-- <div id="fh5co-protocol">
 			<div class="container">
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
@@ -294,7 +318,7 @@
 
 					<div class="col-md-8 col-md-offset-2 text-center">
 						<div class="row">
-							<!-- <div class="col-md-4 col-xs-6">
+							<div class="col-md-4 col-xs-6">
 								<div class="item-protocol">
 									<div class="icon">
 										<img style="padding: 10px" height="90px" width="90px"
@@ -317,7 +341,7 @@
 										<p>Mohon hindari kerumunan untuk kenyamanan</p>
 									</div>
 								</div>
-							</div> -->
+							</div> 
 							<div class="col-md-6 col-xs-12">
 								<div class="item-protocol">
 									<div class="icon">
@@ -370,7 +394,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
 		<div id="fh5co-ayat">
 			<img height="400" width="100%" style="position: absolute; bottom: -175px"
@@ -408,7 +432,7 @@
 				</div>
 
 				<iframe
-					src="https://docs.google.com/forms/d/e/1FAIpQLSdEO8L1T8m1o0GHIS85vWAMzJi_IbgwKzYyj8iv54nbXXj8Hw/viewform?usp=header"
+					src="https://docs.google.com/forms/d/e/1FAIpQLSfIwq2KvsK5ZAY1rC-VNS8Onwyj8ttVRYUL9kNoZpaer4xOcw/viewform?usp=publish-editor"
 					width="100%" height="" frameborder="0" marginheight="0" marginwidth="0"
 					style="min-height:98vh">Loading…</iframe>
 			</div>
@@ -427,11 +451,13 @@
 								class="nama-undangan"></b> berkenan hadir dan memberikan doa restu.
 							<br>Atas kehadiran dan doa restunya, kami mengucapkan terima kasih.
 						<h3 style="color: #bf9b73">Wassalamu'alaikum warahmatullahi wabarakatuh.</h3>
-						Jazakumullahu Khairan
 						</p>
 						<!-- <img src="images/CoupleFlower.png" width="100" height="100"> -->
 						<br>
-						<h1 style="font-family: 'Satisfy', Arial, serif">Zulfa & Ismail</h1>
+						<!-- <h1 style="font-family: 'Satisfy', Arial, serif">Rendi & Euis</h1> -->
+						 <p>
+						Powered by Sanmu Corp
+						 </p>
 						<p>
 						<ul class="fh5co-social-icons">
 							<li><a target="_blank" href="mailto:mujahidmuslim0@gmail.com"><i class="icon-mail"></i></a>
@@ -495,12 +521,12 @@
 		}
 
 		// HITUNG MUNDUR
-		day = 11; month = 5 - 1; year = 2025;
-		hour = 10; minute = 0;
+		day = 5; month = 7 ; year = 2026;
+		hour = 13; minute = 0;
 		var d = new Date(year, month, day, hour, minute, 0, 0);
 		simplyCountdown('.simply-countdown-wedding', {
 			year: d.getFullYear(),
-			month: d.getMonth() + 1,
+			month: d.getMonth() ,
 			day: d.getDate(),
 			hour: d.getHours(),
 			minutes: 0, // Default is 0 [0-59] integer
