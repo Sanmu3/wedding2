@@ -863,11 +863,106 @@ figure {
 
 /* Ayat */
 #fh5co-ayat {
-  background-color: #113468;
+  background: linear-gradient(
+    60deg,
+    #113468 0%,
+    #1a4a8e 100%
+  ); /* Efek gradasi biru mewah */
   color: #ffffff;
-  font-size: 24px;
   position: relative;
   overflow: hidden;
+  width: 100% !important;
+  display: block !important;
+  z-index: 5;
+}
+
+#fh5co-ayat .ayat-wrapper {
+  position: relative;
+  z-index: 10;
+  padding-top: 90px;
+  padding-bottom: 140px; /* Memberi ruang agar teks tidak bertabrakan dengan ombak bawah */
+}
+
+#fh5co-ayat .ayat-content {
+  font-size: 20px;
+  line-height: 1.9;
+  font-family: "Courgette", Arial, serif;
+  text-align: center;
+  color: #ffffff !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+#fh5co-ayat .ayat-reference {
+  color: #bf9b73;
+  font-size: 22px;
+  font-family: "Oswald", Arial, sans-serif;
+  display: block;
+  margin-top: 15px;
+}
+
+/* Container khusus pengunci posisi ombak di lantai terbawah */
+.waves-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px; /* Tinggi ombak */
+  min-height: 80px;
+  max-height: 150px;
+  z-index: 6;
+}
+
+.waves {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: -7px; /* Menghilangkan celah pixel kosong di bawah SVG */
+}
+
+/* ENGINE ANIMASI PARALLAX (OMBAK BERGERAK) */
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+  }
+  100% {
+    transform: translate3d(85px, 0, 0);
+  }
+}
+
+/* RESPONSIVE UNTUK LAYAR HANDPHONE (HP) */
+@media screen and (max-width: 768px) {
+  #fh5co-ayat .ayat-wrapper {
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+  #fh5co-ayat .ayat-content {
+    font-size: 17px;
+    padding: 0 15px;
+  }
+  .waves-container {
+    height: 60px; /* Di HP ukuran tinggi ombak menyesuaikan agar tidak makan tempat */
+  }
 }
 
 #fh5co-ayat .ayat-content {
@@ -1222,7 +1317,14 @@ form label {
 }
 @media screen and (max-width: 768px) {
   .heart {
-    display: none;
+    display: block !important;
+    margin: 20px auto !important;
+    text-align: center;
+    top: 3.5em;
+  }
+  .heart i {
+    font-size: 16px;
+    padding: 12px;
   }
 }
 
