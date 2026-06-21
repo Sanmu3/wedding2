@@ -72,12 +72,6 @@
 </head>
 
 <body class="kunci-scroll">
-	<div id="preloader">
-    <div class="loader-content">
-        <div class="spinner"></div>
-        <p>Memuat Undangan Bahagia...</p>
-    </div>
-</div>
 	<div class="fh5co-loader"></div>
 
 	<div id="page">
@@ -533,16 +527,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.0.3/showdown.min.js"></script>
 
 	<script>
-		// Menunggu seluruh halaman (Script, Gambar, Audio) selesai load sempurna
-        window.addEventListener('load', function() {
-            var preloader = document.getElementById('preloader');
-            if (preloader) {
-                // Beri sedikit jeda 0.5 detik setelah load selesai agar transisinya mulus
-                setTimeout(function() {
-                    preloader.classList.add('loaded');
-                }, 500);
-            }
-        });
 		// NAMA UNDANGAN
 		var url = window.location.href;
 		var urlObj = new URL(url);
