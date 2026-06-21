@@ -2758,3 +2758,10 @@ form label {
   transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out,
     visibility 0.8s ease-in-out !important;
 }
+
+body.kunci-scroll {
+  overflow: hidden !important;
+  height: 100vh !important;
+  position: fixed !important;
+  width: 100%;
+}

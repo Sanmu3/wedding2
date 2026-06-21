@@ -79,6 +79,9 @@
 
   // Fungsi utama ketika tombol "Buka Undangan" diklik
   var bukaUndangan = function () {
+    // 1. Lepas kunci scroll pada body agar halaman utama bisa di-scroll kembali di HP
+    $("body").removeClass("kunci-scroll");
+
     // Tambahkan transisi memudar pada overlay utama
     $("#overlay").addClass("hide-overlay");
 
