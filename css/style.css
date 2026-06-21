@@ -2715,7 +2715,7 @@ form label {
 /* Tambahan petunjuk scroll halus di bawah amplop (opsional tapi bagus untuk UX) */
 .scroll-hint {
   position: absolute;
-  bottom: 180px;
+  bottom: calc(30vh - 120px);
   color: #cca16e;
   font-size: 14px;
   text-align: center;

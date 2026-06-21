@@ -76,6 +76,40 @@
       }
     });
   };
+  // --- PENGKONDISIAN TEKS & IKON PETUNJUK (HP/TAB vs DESKTOP) ---
+  function sesuaikanTeksPetunjuk() {
+    var elemenTeks = document.getElementById("teks-petunjuk");
+    // Cari elemen ikon panah di dalam .scroll-hint
+    var elemenIkon = document.querySelector(".scroll-hint i");
+
+    if (elemenTeks && elemenIkon) {
+      // Jika lebar layar kurang dari atau sama dengan 1024px (HP & Tablet)
+      if (window.innerWidth <= 1024) {
+        elemenTeks.innerHTML = "Swipe ke atas untuk membuka surat";
+
+        // Ganti class ikon menjadi panah ke atas (up)
+        elemenIkon.className = "icon-arrow-up";
+      } else {
+        // Jika layar besar (Laptop / Desktop PC)
+        elemenTeks.innerHTML = "Klik tombol di atas untuk membuka surat";
+
+        // Kembalikan ke panah ke bawah (down)
+        elemenIkon.className = "icon-arrow-down";
+      }
+    }
+  }
+
+  // Jalankan fungsi saat halaman pertama kali dimuat
+  sesuaikanTeksPetunjuk();
+
+  // Jalankan fungsi juga saat layar di-resize
+  window.addEventListener("resize", sesuaikanTeksPetunjuk);
+
+  // Jalankan fungsi saat halaman pertama kali dimuat
+  sesuaikanTeksPetunjuk();
+
+  // Jalankan fungsi juga saat layar di-resize (opsional, untuk jaga-jaga)
+  window.addEventListener("resize", sesuaikanTeksPetunjuk);
 
   // Fungsi utama ketika tombol "Buka Undangan" diklik
   var bukaUndangan = function () {
